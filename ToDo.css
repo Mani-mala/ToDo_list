@@ -1,0 +1,159 @@
+*
+{
+   
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to right, #ff9966, #ff5e62); */
+    background:url('https://img.freepik.com/free-vector/gradient-abstract-background_23-2149131346.jpg'); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    background:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(234, 141, 70) inset;
+    width: 50%;
+    height: 70%;
+    margin:50px auto;
+    overflow-y: auto;
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    text-shadow: 4px 4px 4px rgb(234, 141, 70);
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 82%;
+    height:30px;
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    background:transparent ;
+    box-shadow: 0 3px 3px rgb(234, 141, 70);
+    outline: none;
+    color: white;
+}
+.select{
+    height: 50px;
+    width: 40%;
+}
+.side  {
+    width: 40%;
+}
+
+.round-btn {
+    width: 30%;
+    height: 50px;
+    background: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    border-radius: 50px;
+    margin:15px;
+}
+
+.round-btn:hover {
+    background: #176202;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    /*background: rgb(38, 10, 89);*/
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    margin:10px;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 11, 53);
+    border:3px solid indigo;
+    position: relative;
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.complete-btn {
+    background: #4CAF50;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    color: white;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background: #f44336;
+    color: white;
+}
+
+.complete-btn:hover {
+    background: #388E3C;
+}
+
+.delete-btn:hover {
+    background: #D32F2F;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.progress-container {
+    background: #f7f6f9;
+    width: 80%;
+    height: 30%;
+    margin: 30px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 10px;
+    width: 0%;
+    background: rgb(234, 141, 70);
+    transition: width 0.5s;
+}
