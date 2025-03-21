@@ -93,7 +93,7 @@ li {
     border:1px solid wheat;
     box-shadow: 0 0 20px rgb(184, 91, 44) inset;
     position: relative;
-
+}
 .task-text {
     flex-grow: 1;
     text-align: left;
